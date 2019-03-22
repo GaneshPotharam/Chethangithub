@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Find the highest value in an array</title>
-</head>
-<body>
-<script>
-    
+
     function max(input) {
      if (toString.call(input) !== "[object Array]")  
        return false;
@@ -14,6 +6,3 @@
 	}
 
 console.log(max([12,34,56,1]));
-</script>
-</body>
-</html>
