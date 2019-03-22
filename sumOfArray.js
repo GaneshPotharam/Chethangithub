@@ -1,8 +1,4 @@
 
-<!DOCTYPE html>
-<html><head><title> Sum of Array Elements</title></head>
-<body>
-    <script>
 function  sumArray(Array){
     var i , sum = 0;
     for(i =0 ; i < Array.length; i++){
@@ -12,6 +8,3 @@ function  sumArray(Array){
 }
 var arry =  sumArray([6,2,3]);
 console.log(arry);   
-</script>
-</body> 
-</html>
