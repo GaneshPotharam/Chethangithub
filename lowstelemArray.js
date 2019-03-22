@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-<title>Javascript random function</title>
-</head>
-<body>
-<script>
+
     function min(input) {
      if (toString.call(input) !== "[object Array]")  
        return false;
@@ -13,6 +6,4 @@
 	}
 
 console.log(min([12,34,56,1]));
-    </script>
-</body>
-</html>
+ 
