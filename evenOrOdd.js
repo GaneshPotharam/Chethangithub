@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html><head><title> even or odd</title></head>
-<body>
-    <script>
+
    function evenOrOdd(number){
     if(number%2 == 0){
         return  number + ' is Even number' ; 
@@ -12,6 +9,4 @@
 }
 var checkNum = evenOrOdd(3);
 console.log(checkNum);
-</script>
-</body> 
-</html>
+
