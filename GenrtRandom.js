@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
- 
-  <title>Javascript random function</title>
-</head>
-<body>
-<script>
+
 function randm(min, max) {
   if (min==null && max==null)
     return 0;    
@@ -18,7 +11,3 @@ function randm(min, max) {
   };
  console.log(randm(20,1));
    
-
-</script>
-</body>
-</html>
