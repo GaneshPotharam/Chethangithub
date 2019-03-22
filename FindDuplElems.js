@@ -1,15 +1,22 @@
-function arrdup(arr){
-    var k=0 , arrduplicat = [];
-    for(var i = 0 ; i<arr.length ;i++){
-        for(var j =i+1 ; j <arr.length ; j++){
-            if(arr[i] == arr[j]){
-                arrduplicat.push(arr[j]);
-                k++;
-            }
-        }
+function findDuplicateElements(arra1) {
+    var object = {};
+    var result = [];
+
+    arra1.forEach(function (item) {
+      if(!object[item])
+          object[item] = 0;
+        object[item] += 1;
+    })
+
+    for (var prop in object) {
+       if(object[prop] >= 2) {
+           result.push(prop);
+       }
     }
-    return arrduplicat;
- }
- var arry = arrdup([3,4,4,7,3,1]);
- console.log(arry);
+
+    return result;
+
+}
+
+console.log(findDuplicateElements([1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6]));
  
