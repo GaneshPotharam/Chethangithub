@@ -1,26 +1,10 @@
-function mergedArray(firstArray,secondArray){
-   for(var i=0;i<secondArray.length;i++){
-       firstArray.push(secondArray[i]);
-   }
-for(i=0;i<firstArray.length;i++)
-   {
-      for(j=i+1;j<firstArray.length;j++)
-      {
-                 
-         if(firstArray[i]>firstArray[j])
-          {
-         
-              temp=firstArray[i];
-              firstArray[i]=firstArray[j];
-              firstArray[j]=temp;
-              
-           }
-             
-      }
-  
-  }
-  return firstArray;
+function mergearrys(arr1 , arr2){
+    for(let i in arr2){
+        arr1.push(arr2[i]);
+    }
+    arr1.sort();
+    return arr1;
 }
-var merge = mergedArray([4,2,3,5,1],[6,7,9,8]);
-
+var merge = mergearrys([2,5,4,6],[7,8,3]);
 console.log(merge);
+
